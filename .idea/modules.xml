@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common/CortexCore.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Common/CortexCore.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common/CortexCore.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Common/CortexCore.common.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CortexCore.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CortexCore.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CortexCore.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CortexCore.test.iml" />
     </modules>
