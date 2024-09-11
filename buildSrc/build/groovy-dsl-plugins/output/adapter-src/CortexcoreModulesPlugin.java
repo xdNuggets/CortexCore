@@ -6,23 +6,22 @@ import org.gradle.groovy.scripts.TextResourceScriptSource;
 import org.gradle.internal.resource.StringTextResource;
 import org.gradle.util.GradleVersion;
 /**
- * Precompiled cortexcore.common script plugin.
+ * Precompiled cortexcore.modules script plugin.
  **/
-public class CortexcoreCommonPlugin implements org.gradle.api.Plugin<org.gradle.api.internal.project.ProjectInternal> {
+public class CortexcoreModulesPlugin implements org.gradle.api.Plugin<org.gradle.api.internal.project.ProjectInternal> {
     private static final String MIN_SUPPORTED_GRADLE_VERSION = "5.0";
     public void apply(org.gradle.api.internal.project.ProjectInternal target) {
         assertSupportedByCurrentGradleVersion();
         try {
-            Class<? extends BasicScript> pluginsBlockClass = Class.forName("cp_precompiled_CortexcoreCommon").asSubclass(BasicScript.class);
+            Class<? extends BasicScript> pluginsBlockClass = Class.forName("cp_precompiled_CortexcoreModules").asSubclass(BasicScript.class);
             BasicScript pluginsBlockScript = pluginsBlockClass.getDeclaredConstructor().newInstance();
             pluginsBlockScript.setScriptSource(scriptSource(pluginsBlockClass));
             pluginsBlockScript.init(target, target.getServices());
             pluginsBlockScript.run();
-            target.getPluginManager().apply("java");
-            target.getPluginManager().apply("io.papermc.paperweight.userdev");
+            target.getPluginManager().apply("cortexcore.common");
 
 
-            Class<? extends BasicScript> precompiledScriptClass = Class.forName("precompiled_CortexcoreCommon").asSubclass(BasicScript.class);
+            Class<? extends BasicScript> precompiledScriptClass = Class.forName("precompiled_CortexcoreModules").asSubclass(BasicScript.class);
             BasicScript script = precompiledScriptClass.getDeclaredConstructor().newInstance();
             script.setScriptSource(scriptSource(precompiledScriptClass));
             script.init(target, target.getServices());

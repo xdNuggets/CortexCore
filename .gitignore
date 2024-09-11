@@ -10,6 +10,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# BuildSrc
+buildSrc/.gradle
+
 # Package Files #
 *.jar
 *.war
@@ -22,3 +25,15 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/.gradle/noVersion/buildLogic.lock
+/buildSrc/build/pluginDescriptors/cortexcore.common.properties
+/buildSrc/build/resources/main/META-INF/gradle-plugins/cortexcore.common.properties
+/buildSrc/build/groovy-dsl-plugins/output/plugin-requests/cortexcore.modules/metadata.bin
+/.gradle/8.8/fileHashes/resourceHashesCache.bin
+/buildSrc/build/tmp/jar/MANIFEST.MF
+/buildSrc/build/groovy-dsl-plugins/output/plugin-requests/cortexcore.common/metadata.bin
+/buildSrc/build/groovy-dsl-plugins/work/metadata/cortexcore.modules/metadata.bin
+/buildSrc/build/resources/main/META-INF/gradle-plugins/cortexcore.modules.properties
+/buildSrc/build/pluginDescriptors/cortexcore.modules.properties
+/buildSrc/build/groovy-dsl-plugins/work/metadata/cortexcore.common/metadata.bin
+/buildSrc/build/tmp/compileJava/previous-compilation-data.bin
