@@ -1,0 +1,6 @@
+name: CortexCore
+version: '1.0'
+main: dev.cortex.cortexcore.CortexCore
+api-version: '1.21'
+description: An open-source plugin built and maintained by members of Cortex Development.
+website: https://discord.gg/cortexdev
