@@ -9,9 +9,9 @@ Whilst you can clone this repository and build from source, we encourage to alwa
 
 # Maintainers
 
-The current maintainers are a bunch fuckign losers cuz i dont know their name syet. 
+Our current maintainers are Josh (xdNuggets), and Mantice (DeOpping). If you wish to be a contributor simply shoot us a DM.
 
 # Contributing
 
 ## The plugin will be coded in Java, and we will utilize the [Google Style Guide](https://google.github.io/styleguide/javaguide.html).
-Please navigate to our contributing [guide](placeholder.com)
+Please navigate to our contributing [guide](https://github.com/xdNuggets/CortexCore/blob/main/CONTRIBUTING.md)
