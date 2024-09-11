@@ -1,0 +1,13 @@
+#
+# CortexCore
+#
+
+# Console log and debug settings
+#
+logging:
+
+  # Send debug messages to console?
+  debug-mode: false
+
+  # Allow coloring in console messages?
+  allow-formatting: true
