@@ -1,5 +1,6 @@
 package dev.cortex.cortexcore;
 
+
 import dev.cortex.cortexcore.modules.ModuleManager;
 import dev.cortex.cortexcore.modules.ModuleManagerImpl;
 import dev.cortex.cortexcore.util.configuration.YamlConfig;
@@ -16,7 +17,9 @@ public final class CortexCorePlugin extends JavaPlugin implements CortexCoreUtil
     }
 
     private YamlConfig configYml;
+
     private ModuleManagerImpl moduleManager;
+
 
     @Override
     public void onLoad() {
@@ -25,15 +28,19 @@ public final class CortexCorePlugin extends JavaPlugin implements CortexCoreUtil
         configYml = new YamlConfig("config");
         CortexLog.onLoad();
 
+
         moduleManager = new ModuleManagerImpl();
         moduleManager.onLoad();
+
     }
 
     @Override
     public void onEnable() {
         // Plugin startup logic
 
+
         moduleManager.onEnable();
+
 
         CortexLog.divider();
         CortexLog.log(CortexLogLevel.SUCCESS, "CortexCore enabled!");
@@ -48,7 +55,9 @@ public final class CortexCorePlugin extends JavaPlugin implements CortexCoreUtil
     public void onDisable() {
         // Plugin shutdown logic
 
+
         moduleManager.onDisable();
+
         CortexLog.log(CortexLogLevel.SUCCESS, "CortexCore disabled!");
     }
 
@@ -59,6 +68,7 @@ public final class CortexCorePlugin extends JavaPlugin implements CortexCoreUtil
         configYml.reload();
         CortexLog.onReload();
 
+
         moduleManager.onReload();
     }
 
@@ -67,9 +77,11 @@ public final class CortexCorePlugin extends JavaPlugin implements CortexCoreUtil
         return configYml;
     }
 
+
     @Override
     public ModuleManager getModuleManager() {
         return moduleManager;
     }
+
 
 }

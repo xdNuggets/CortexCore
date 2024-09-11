@@ -6,6 +6,8 @@ import dev.cortex.cortexcore.util.configuration.YamlConfig;
 public interface CortexCoreUtils {
 
     YamlConfig getConfigYml();
+
     ModuleManager getModuleManager();
+
 
 }
