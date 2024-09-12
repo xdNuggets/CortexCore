@@ -6,11 +6,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 /**
- * Created on: 2024-09-11
- * Author: Simon
- */
-
-/**
  * A concrete implementation of {@link ItemBuilder} for building {@link ItemStack} instances
  * with {@link ItemMeta}. This class is specifically designed for items that use the standard
  * {@link ItemMeta}.

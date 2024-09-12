@@ -19,11 +19,6 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- * Created on: 2024-09-11
- * Author: Simon
- */
-
-/**
  * A generic builder for creating {@link ItemStack} instances with customized {@link ItemMeta}.
  * This abstract class defines a fluent API for setting various properties such as type, amount,
  * display name, lore, enchantments, and more.

@@ -19,11 +19,6 @@ import java.util.Random;
 import java.util.UUID;
 
 /**
- * Created on: 2024-09-11
- * Author: Simon
- */
-
-/**
  * A concrete implementation of {@link ItemBuilder} for building {@link ItemStack} instances
  * with {@link SkullMeta}. This class is specifically designed for items that use the player skull
  * {@link ItemMeta} and allows setting player textures and profiles.
