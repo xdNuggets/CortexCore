@@ -31,7 +31,7 @@ public abstract class ItemBuilder<T extends ItemBuilder<?, ?>, M extends ItemMet
     private final Class<T> thisClass;
     private final Class<M> metaClass;
     private final ItemStack item;
-    private boolean hasItemMeta;
+    private final boolean hasItemMeta;
 
     private static final Predicate<ItemBuilder<?, ?>> CONST_TRUE_PRED = builder -> true;
     private static final Predicate<ItemBuilder<?, ?>> CONST_FALSE_PRED = builder -> false;
@@ -54,7 +54,7 @@ public abstract class ItemBuilder<T extends ItemBuilder<?, ?>, M extends ItemMet
         }
 
         if (item == null) {
-            throw new InvalidMaterialProvidedException(item.getType());
+            throw new InvalidMaterialProvidedException(null);
         }
 
         if (item.hasItemMeta()) {
